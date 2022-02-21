@@ -77,9 +77,13 @@ cp /certs/ca.crt /etc/docker/certs.d/harbor.server.local
 systemctl restart docker
 5. Create log file: \
 mkdir -p /var/log/harbor
-6. Run install script on harbor directory \
-./install.sh
 7. Edit harbor.yml file
+   hostname:
+   certs: /certs/harbor.server.local.cert
+   private_key: /certs/harbor.server.local.key
+9. Run install script on harbor directory \
+./install.sh
+
 
 
 
