@@ -79,6 +79,7 @@ systemctl restart docker
 mkdir -p /var/log/harbor
 6. Run install script on harbor directory \
 ./install.sh
+7. Edit harbor.yml file
 
 
 
