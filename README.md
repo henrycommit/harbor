@@ -30,7 +30,7 @@ Download online or offline version on _https://github.com/goharbor/harbor/releas
 tar -xvf harbor-offline-installer-version.tgz
 
 **Configure HTTPS access to Harbor**
-- Create a certificate directory: **_mkdir /certs_**
+- Create a certificate directory: **mkdir /certs**
 - Generate a Certificate Authority Certificate
 1. Generate a CA certificate private key: **_openssl genrsa -out ca.key 4096_**
 2. Generate the CA certificate: 
