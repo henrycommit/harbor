@@ -48,7 +48,7 @@ _**openssl req -sha512 -new \
 -out harbor.server.local.csr**_
 
 3. Generate an x509 v3 extension file:
-_**cat > v3.ext <<-EOF \
+cat > v3.ext <<-EOF \
 authorityKeyIdentifier=keyid,issuer \
 basicConstraints=CA:FALSE \
 keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment \
@@ -56,7 +56,7 @@ extendedKeyUsage = serverAuth \
 subjectAltName = @alt_names
 [alt_names]
 DNS.1=harbor.server.local \
-EOF**_
+EOF
 
 4. Use the v3.ext file to generate a certificate for your Harbor host: \
 _**openssl x509 -req -sha512 -days 3650 \
