@@ -13,7 +13,7 @@ Harbor is an open source trusted cloud native registry project that stores, sign
 - Vulnerability Scanning: Harbor scans images regularly for vulnerabilities and has policy checks to prevent vulnerable images from being deployed.
 
 - Image deletion & garbage collection: System admin can run garbage collection jobs so that images(dangling manifests and unreferenced blobs) can be deleted and their space can be freed up periodically.
-
+Refered https://goharbor.io/docs/1.10/install-config/configure-https/
 # Harbor installation prerequisites
 | Software       | Version                       | 
 | -------------  | ----------------------------- |
